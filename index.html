@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerte de Sécurité</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+        }
+
+        .message {
+            background: rgba(0,0,0,0.5);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        .dancer {
+            margin: 20px 0;
+            width: 150px;
+            height: 150px;
+            animation: dance 1s infinite alternate;
+        }
+
+        @keyframes dance {
+            0% { transform: rotate(0deg) translateY(0); }
+            50% { transform: rotate(20deg) translateY(-10px); }
+            100% { transform: rotate(-20deg) translateY(10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <img src="https://i.postimg.cc/5t0Jq0bW/dancing-emoji.gif" alt="Bonhomme dansant" class="dancer">
+        <h1>Bonjour ! 👋</h1>
+        <p>
+            Monsieur, Madame, vous avez été piégé… 😅<br>
+            Ce petit test a pour but de vous sensibiliser : <br>
+            <strong>Ne cliquez jamais sur des liens inconnus ou suspects.</strong><br>
+            La sécurité numérique commence avec la prudence !
+        </p>
+    </div>
+</body>
+</html>
